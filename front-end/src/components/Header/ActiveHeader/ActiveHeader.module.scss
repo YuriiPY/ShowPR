@@ -1,0 +1,90 @@
+$color-0: #3C1D23;  // Темно-рожевий
+$color-10: #8F4B59; // Темний
+$color-20: #BF6A7E; // Пастельний
+$color-30: #E296A7; // Світлий
+$color-50: #FFD8E4; // Оригінальний
+$color-70: #FFE6F0; // Світло-рожевий
+$color-90: #FFF7FB; // Дуже світлий
+$color-99: #FFFFFF; // Білий
+$color-100: #FFFFFF; // Білий
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == xs {
+        @media (max-width: 480px) { @content; }
+    } @else if $breakpoint == sm {
+        @media (max-width: 768px) { @content; }
+    } @else if $breakpoint == md {
+        @media (max-width: 1024px) { @content; }
+    } @else if $breakpoint == lg {
+        @media (max-width: 1280px) { @content; }
+    }
+}
+//ACTIVE HEADER
+
+.activeHeader {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 24px 26px rgba(0, 0, 0, 0.1);
+  z-index: 15;
+  backdrop-filter: blur(5px);
+//   transform: translateY(-500px);
+//   transition: transform 0.5s ease !important;
+
+//   &.visible {
+//     height: auto !important;
+//     transform: translateY(0);
+//   }
+//   &.hidden {
+//     transform: translateY(-300);
+//   }
+
+  .activeContent {
+    display: flex;
+    align-items: center !important;
+    padding: 10px 0 10px 0;
+    min-height: 90px;
+  }
+
+  
+
+  .col_1 {
+    flex: 1;
+
+    .mainMenu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .navigationActive {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+    
+          ul {
+            display: flex;
+            font: bold 17px "Josefin Sans", sans-serif;
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+    
+          li {
+            display: inline-block;
+          }
+    
+          a {
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            transition: filter 0.5s;
+    
+            &:hover {
+              filter: invert(50%);
+            }
+          }
+        }
+      }
+  }
+}

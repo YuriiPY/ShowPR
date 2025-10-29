@@ -1,0 +1,296 @@
+.paydesk {
+    width: 100%;
+    height: max-content;
+    min-height: 1000px;
+
+
+    .container {
+        padding: 50px;
+        width: 100%;
+        height: 100%;
+
+        @media (max-width: 768px) {
+            padding: 30px;
+        }
+    }
+    .checkTable {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+
+        }
+
+        .productsCheckColumn {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            @media (max-width: 768) {
+                order: 1;
+            }
+
+            .productCheckArea {
+                position: sticky;
+                top: 20px;
+                width: 70%;
+                padding: 10px;
+
+                @media (max-width: 768) {
+                    width: 100%;
+                }
+
+                .productCheckTitle {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    padding-bottom: 20px;
+
+                    span {
+                        font-size: 35px;
+                        font-weight: 500;
+                        padding-bottom: 5px;
+                    }
+
+                }
+
+                .productsList {
+                    width: 100%;
+
+                    .singleProduct {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: left;
+                        gap: 5px;
+                        counter-increment: list-counter;
+                        border-bottom: 2px solid #959595;
+                        padding-bottom: 10px;
+                        margin-bottom: 15px;
+
+                        &::before {
+                            content: counter(list-counter) ".";
+                            font-size: 22px;
+                            font-weight: 500;
+                            
+                            @media (max-width: 425px) {
+                                font-size: 20px;
+                            }
+                        }
+                        
+
+                        .singleProductContainer {
+                            flex: 1;
+
+                            display: flex;
+                            justify-content: space-between;
+
+                            span {
+                                font-size: 25px;
+                                font-weight: 500;
+                            }
+
+                            @media (max-width: 425px) {
+                                span {
+                                    font-size: 20px;
+                                } 
+                            }
+
+                            .productName {
+                                font-size: 23px;
+
+                                &::after {
+                                    content: ":";
+                                    font-size: 22px;
+                                }
+                            }
+
+                            .productAmount {
+                                padding-right: 10px;
+                                font-size: 20px;                                
+
+                                &::after {
+                                    content: "zl";
+                                    font-size: 20px;
+                                }
+                            }
+
+                            .notAvailable {
+                                color: #aa0000;
+                                font-size: 20px;
+                            }
+                        }
+
+                    }
+                }
+
+                .totalAmount {
+                    width: 100%;
+                    height: 40px; 
+                    background-color: #E296A7;;
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 15px;
+                    align-items: center;
+                    padding: 10px;
+                    border-radius: 10px;
+
+                    span {
+                        font-size: 24px;
+                        font-weight: 500;
+                    }
+
+                    @media (max-width: 768px) {
+                        justify-content: space-between;
+
+                        span {
+                            font-size: 20px;
+                        }
+                    }
+
+                    @media (max-width: 425px) {
+                        span {
+                            font-size: 15px;
+                        }
+                    }
+
+                   .amount {
+
+                        &::after {
+                            content: "zl";
+                        }
+                   }
+                }
+            }
+        }
+
+        .dynamicColumn {
+            width: 100%;
+
+            @media (max-width: 768) {
+                order: 2;
+            }
+
+            .containerForm {
+                display: flex;
+                justify-content: center;
+                align-items: start;
+            }
+
+            .formArea {
+                padding: 10px;
+                width: 70%;
+                
+                @media (max-width: 768) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .statusForm {
+        width: 100%;
+        height: 100px;
+        min-height: max-content;
+
+        .statusContainer {
+            height: 100%;
+            padding: 0 10%;
+           
+            .status {
+                position: relative;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    height: 15px;
+                    width: 100%;
+                    background-color: transparent;
+                    border-radius: 20px;
+                    border: #dcd8d3 solid 3px;
+                }
+
+                .statusBar {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    // transform: translate(-50%, -50%);
+                    height: 15px;
+                    width: 50%;
+                    background: #DB9A64;
+                    // background: linear-gradient(90deg,rgba(219, 154, 100, 1) 0%, rgba(255, 251, 245, 1) 20%);
+                    border-radius: 20px;
+                    transition: .5s linear;
+
+                    // &.state-2 {
+                    //     background: linear-gradient(90deg,rgba(219, 154, 100, 1) 33%, rgba(255, 251, 245, 1) 40%);
+                    // }
+                    // &.state-3 {
+                    //     background: linear-gradient(90deg,rgba(219, 154, 100, 1) 66%, rgba(255, 251, 245, 1) 70%);
+                    // }
+                }
+
+                .statusPoints {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    height: fit-content;
+                    gap: 4%;
+                    width: 100%;
+
+                    .statusPointContainer {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: fit-content;
+                        width: max-content;
+                        align-items: center;
+
+                        .statusPoint {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            z-index: 2;
+                            border-radius: 50%;
+                            width: 55px;
+                            height: 55px;
+                            background-color: #fffbf5;
+                            border: #dcd8d3 solid 3px;
+                            transition: .7s ease-in-out;
+
+                            &.active {
+                                border-color: #DB9A64 !important;
+
+                            }
+
+
+                            
+
+                            span {
+                                font-size: 25px;
+                                font-weight: 500;
+                                color: #3C1D23;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

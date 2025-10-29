@@ -1,0 +1,592 @@
+.basket {
+    z-index: 15;
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+
+    @media (max-width:620px) {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .basketBtnContainer {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .basketOverlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f3f3f3;
+            border-radius: 50%;
+            height: 125%;
+            width: 125%;
+            border: 1px solid rgba(0, 0, 0, 0.8);
+
+            @media (max-width: 768px) {
+                height: 110%;
+                width: 110%;
+            }
+        }
+
+       .basketBtn {
+        position: relative;
+        background-color: transparent;
+        color: #5b464a;
+        position: relative;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+
+        .basketContentContainer {
+            position: absolute;
+            width: 85%;
+            height: 85%;
+            z-index: 105;
+            top: 8%;
+            right: 2%;
+        }
+
+        &:hover {
+            color: #5e5a5b;
+        }
+
+        .basketIconContainer {
+            position: relative;
+            z-index: 200;
+        }
+
+        .basketAmountIconContainer,
+        .basketCountIconContainer,
+        .mobileBasketAmountIconContainer {
+        z-index: 100; 
+        pointer-events: none; 
+        }
+
+        .basketAmountIconContainer {
+            position: absolute;
+            top: -70%;
+            left: -70%;
+            background-color: #f3f3f3;
+            border-top: 1px solid #000;
+            border-right: 1px solid #000;
+            border-left: 1px solid #000;
+            border-bottom: 1px solid #f3f3f3;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            aspect-ratio: 1/1; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(-45deg);            
+
+
+            .basketAmountIcon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2px;
+                transform: rotate(45deg);
+                min-width: 30px;
+                color: #8F4B59;
+                font-size: 18px;
+                font-weight: 600;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    bottom: -35%;
+                    right: -40%;
+                    content: "zl";
+                    color: #8F4B59;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+        }
+        .basketCountIconContainer {
+            position: absolute;
+            bottom: -70%;
+            left: -70%;
+            background-color: #f3f3f3;
+            border-top: 1px solid #000;
+            border-right: 1px solid #000;
+            border-left: 1px solid #000;
+            border-bottom: 1px solid #f3f3f3;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            aspect-ratio: 1/1; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(-135deg);            
+
+
+            .basketCountIcon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2px;
+                transform: rotate(135deg);
+                color: #8F4B59;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+        .mobileBasketAmountIconContainer {
+            position: absolute;
+            top: -40%;
+            left: -40%;
+            background-color: #f3f3f3;
+            border-top: 1px solid #000;
+            border-right: 1px solid #000;
+            border-left: 1px solid #000;
+            border-bottom: 1px solid #f3f3f3;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            aspect-ratio: 1/1; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(-45deg);         
+
+
+            .mobileBasketAmountIcon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                transform: rotate(45deg);
+                color: #8F4B59;
+                font-size: 14px;
+                font-weight: 600;
+                min-width: 30px;
+                position: relative;
+                z-index: 0;
+
+                &::after {
+                    position: absolute;
+                    z-index: 0;
+                    bottom: -35%;
+                    right: -40%;
+                    content: "zl";
+                    color: #8F4B59;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+        }
+    } 
+    }  
+
+}
+
+.basketDialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+    background-color: transparent;
+    z-index: 1000;
+    padding: revert;
+    box-sizing: border-box;
+
+    &::backdrop {
+         background: rgba(0, 0, 0, 0.8);
+    }
+
+    .basketContainer {
+        max-width: 35vw;
+        min-width: 700px;
+        max-height: 75vh;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .dialogCloseBtn {
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: #fffbf5;
+            width: 30px;
+            aspect-ratio: 1/1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                color: #697279;
+            }
+        }
+
+        .mainContainer {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: #fffbf5;
+            border: solid 5px #fffbf5;
+
+
+            .mainArea {
+                flex: 1;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding-top: 25px;
+
+                // .basketHeader {
+                //     position: sticky;
+                //     top: 0;
+                //     left: 0;
+                //     width: 100%;
+                //     max-height: 70px;
+                //     height: 70px;
+                //     padding: 0 25px;
+                //     background-color:#fffbf5;
+                //     display: flex;
+                //     align-items: center;
+                //     justify-content: space-between;
+                //     -webkit-box-shadow: 0px 1px 15px -9px rgba(0, 0, 0, 1);
+                //     -moz-box-shadow: 0px 1px 15px -9px rgba(0, 0, 0, 1);
+                //     box-shadow: 0px 1px 15px -9px rgba(0, 0, 0, 1);
+
+                //     .basketTitle {
+                //         width: max-content;
+                //         display: inline-block;
+
+                //         span{
+                //             font-size: 25px;
+                //             font-weight: 500;
+                //         }
+                //     }
+
+                //     .basketClearBtn {
+                    
+                //         button  {
+                //             cursor: pointer;
+                //             height: 50px;
+                //             width: max-content;
+                //             border-radius: 50px;
+                //             padding: 20px;
+                //             display: flex;
+                //             align-items: center;
+                //             justify-content: center;
+                //             transition: .3s ease-in-out;
+                //             background-color: #FFF7FB;
+                //             color: #8F4B59;
+                //             -webkit-box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 1);
+                //             -moz-box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 1);
+                //             box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 1);
+
+                //             &:hover {
+                //                 background-color: #fffbf5;
+                //                 color: #8F4B59;
+                //             } 
+
+                //             span {
+                //                 font-size: 20px;
+                //                 font-weight: 500;
+                //             }
+                //         }
+                //     }
+                // }
+                .basketFooter {
+                    position: sticky;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 70px; 
+                    padding: 10px 20px 10px 20px;
+                    background-color: #fffbf5;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    -webkit-box-shadow: 0px 1px 15px -9px rgba(0, 0, 0, 1);
+                    -moz-box-shadow: 0px 1px 15px -9px rgba(0, 0, 0, 1);
+                    box-shadow: 0px 1px 15px -9px rgba(0, 0, 0, 1);
+
+                    .totalAmount {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 5%;
+                        flex: 1;
+
+                        .basketBuyButton {
+                            flex: 1;
+                            background-color: #8F4B59;
+                            color: #f3f3f3;
+                            cursor: pointer;
+                            height: 50px;
+                            width: max-content;
+                            border-radius: 50px;
+                            padding: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: .3s ease-in-out; 
+
+                            &:disabled {
+                                cursor: not-allowed;
+                                filter: grayscale(70%);
+                                opacity: .6;
+                                pointer-events: none;
+                            }
+
+                            &:hover {
+                                background-color: #FFF7FB;
+                                color: #8F4B59;
+                            } 
+
+                            span {
+                                font-size: 20px;
+                                font-weight: 500;
+
+                                &::after {
+                                    content: " zl";
+                                }
+                            }
+                        }
+
+                        .clearBasketButton {
+                            min-width: 50px;
+                            min-height: 50px;
+                            background-color: #f3f3f3;
+                            border-radius: 50%;
+                            cursor: pointer;
+
+
+                            span {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                    }
+
+                }
+
+                .scrollContainer {
+                    overflow-y: auto;
+                    flex: 1;
+                    padding: 0 25px 25px 25px;
+
+                    .storeInformation {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: fixed;
+                        top: 12%;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                        background-color: #fffbf5;;
+                        padding: 10px 20px;
+                        border-bottom-right-radius: 20px;
+                        border-bottom-left-radius: 20px;
+
+                        .information {
+                            font-size: 25px;
+                            color: #a80d2c;
+                            font-weight: 500;
+                        }
+                    }
+
+                    .productsArea {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: left;
+                        gap: 15px;
+
+                        .singleBasketProduct {
+                            width: 100%;
+                            padding-bottom: 15px;
+                            border-bottom: solid 2px #959595;
+
+                            .mainInformation {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: left;
+                                align-items: center;
+                                width: 100%;
+                                gap: 10px;
+
+                                .nameContainer, .productCounter, .sumContainer {
+                                    flex: 0 0 25%;
+                                }
+
+                                .sumContainer {
+                                    @media (max-width: 620px) {
+                                        flex: none;
+                                    }
+                                }
+
+
+
+                                .imgSection {
+
+                                    .imgContainer {
+                                        aspect-ratio: 1/1;
+                                        width: 100px;
+                                        height: 100px;
+                                        border-radius: 10px;
+                                        overflow: hidden;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+    
+                                        img {
+                                            object-fit: cover;
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+
+                                .nameContainer {
+
+                                    span {
+                                        font-size: 25px;
+                                        font-weight: 500;
+                                    }
+                                }
+
+                                .productCounter {
+                                    text-align: right;
+                                    display: flex;
+                                    justify-content: right;
+                                    align-items: center;
+                                    
+                                    
+                                    .btnCounter {
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: max-content;
+                                        gap: 5px;
+
+                                        button {
+                                            cursor: pointer;
+                                            background-color: transparent;
+                                            border: none;
+                                            transition: .3s ease-in-out;
+            
+                                            &:hover {
+                                                color: #697279;
+                                            }
+                                        }
+                                        span {
+                                            display: block;
+                                            min-width: 30px;
+                                            font-size: 21px;
+                                            font-weight: 400;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+
+                                .sumContainer {
+                                    
+                                    .productAmount {
+                                        overflow: hidden;
+                                        width: 100%;
+                                        height: 100%;
+                                        min-width: 75px;
+                                        display: flex;
+                                        justify-content: right;
+                                        align-items: center;
+
+                                        span {
+                                            text-align: center;
+                                            min-width: 90px;
+                                            font-size: 21px;
+                                            font-weight: 500;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: centers;
+
+                                            &::after {
+                                                content: " zl";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .additionalInformation {
+                                display: flex;
+                                margin-top: 20px;
+                                flex-direction: column;
+                                width: 100%;
+                                gap: 15px;
+
+                                .additionContainer {
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 15px;
+                                    .additionBtnContainer {
+                                        display: flex;
+                                        gap: 5px;
+                                        align-items: center;
+
+                                        button {
+                                            cursor: pointer;
+                                            background-color: transparent;
+                                            border: none;
+                                            transition: .3s ease-in-out;
+            
+                                            &:hover {
+                                                color: #697279;
+                                            }
+                                        }
+                                        span {
+                                            font-size: 21px;
+                                            font-weight: 400;
+                                            min-width: 20px;
+                                            text-align: center;
+                                        }
+                                    }
+                                    .additionPriceInform {
+                                        display: flex;
+                                        align-items: center;
+
+                                        span {
+                                            font-size: 21px;
+                                            font-weight: 500;
+
+                                            &::after {
+                                                content: " zl";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                }               
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+/* styles/globals.css */
+/* CSS Reset (наприклад, з modern-normalize) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	font-family: sans-serif;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	background-color: #fffbf5;
+}
+
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+}
+
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+table {
+	border-collapse: collapse;
+}
+button {
+	border: none;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  content: none !important;
+}
+
+.slick-dots li button:before {
+	color: #fffbf5 !important;
+}
+
+[data-rsbs-footer] {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #fffbf5;
+    max-height: 15%;
+}
+
+[data-rsbs-header] {
+    background-color: #ffffff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.react-modal-sheet-container {
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}

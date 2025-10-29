@@ -1,0 +1,32 @@
+.menuFoodList {
+    display: flex;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    animation: fadeIn 0.5s ease-in-out;
+    position: relative;
+    min-height: 400px;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    min-height: 1000px;
+    
+
+    .tableMenuTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .menuProductCardContainer {
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 25px;
+        width: 100%;
+        padding: 0;
+    }
+}

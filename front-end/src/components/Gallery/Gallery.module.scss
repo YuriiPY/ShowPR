@@ -1,0 +1,159 @@
+.mainDialog {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    padding: revert;
+    background-color: transparent;
+
+    
+    &::backdrop {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .imgDialogContainer {
+        position: relative;
+
+        .dialogCloseBtn {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            color: #FFFBF5;
+            position: absolute;
+            top: -5%;
+            right: -5%;
+        }
+
+        img {
+            aspect-ratio: 1/1;
+        }
+
+        @media (max-width: 620px) {
+            .dialogCloseBtn {
+                top: -10%;
+            }
+
+            img {
+                aspect-ratio: 1/1;
+                width: 80vw;
+                height: auto;
+            } 
+        }
+    }
+}
+
+.GalleryArea {
+    display: block;
+    position: relative;
+    background: #FFFBF5;
+    width: 100%;
+    height: max-content;
+    padding: 100px 0;
+    overflow: hidden;
+    min-height: 1900px;
+
+    @media (max-width: 1024) {
+        min-height: 3400px;
+    }
+    
+  
+    & .Icon1 {
+        opacity: 0.5;
+      position: absolute;
+      right: 1%;
+      bottom: 23%;
+      z-index: 1;
+    }
+  
+    & .Icon2 {
+        opacity: 0.5;
+      position: absolute;
+      top: 5%;
+      left: 3%;
+      z-index: 1;
+    }
+  
+    & .Icon3 {
+        opacity: 0.5;
+      position: absolute;
+      bottom: 1%;
+      left: 2%;
+      z-index: 1;
+    }
+  
+    & .Container {
+        position: relative;
+        z-index: 3;
+
+        .Row {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+  
+      h3 {
+        color: #000;
+        font: bold 40px 'Josefin Sans', sans-serif;
+        line-height: 60px;
+        font-weight: 500;
+        margin-bottom: 40px;
+      }
+  
+      & .ImgContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        align-content: stretch; 
+        gap: 15px;
+        padding: 0 50%;
+
+        @media (max-width: 1024) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        
+        button {
+            background-color: transparent;
+            height: max-content;
+            width: max-content;
+        }
+  
+        & .Img {
+            width: 500px;
+            height: auto;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+            border: 5px solid #fff;
+            z-index: 2;
+
+            @media (max-width: 620px) {
+                width: 75vw;
+            }
+    
+          img {
+            width: 500px;
+            height: auto;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            cursor: pointer;
+            transition: all 0.5s;
+  
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
+  

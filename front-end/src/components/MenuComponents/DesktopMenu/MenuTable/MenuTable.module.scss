@@ -1,0 +1,151 @@
+	.container {
+		max-width: 100%;
+        width: 100%;
+        transition: all .5s;
+
+	}
+
+// SelectorGroup
+.selectorGroup {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 10px;
+
+  .submenuBtn {
+    border: none;
+    border-bottom: 1px solid #00000056;
+    background-color: transparent;
+    text-align: left;
+    width: max-content;
+    min-width: 100px;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    .submenuBtnText {
+        display: inline-block;
+        color: #000;
+        font-size: 23px;
+        font-weight: 600;
+        transition: all 0.5s ease-in-out;
+        user-select: none;
+
+        &.selected{
+            color: #DB9A64 !important;
+        }
+    }
+
+    &:hover span {
+      color: #DB9A64;
+    }
+  }
+}
+
+
+.tabPane {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+    .container {
+        flex: 0 0 20%;
+        
+        .containerBtnSelector {
+            h2 {
+              color: #000;
+              font: bold 40px 'Josefin Sans', sans-serif;
+              font-weight: 600;
+              padding-bottom: 30px;
+            }
+        }
+    }
+  
+  .selectorGroup {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 10px;
+
+    .selectorBtnContainer {
+        text-align: left;
+        // .submenuBtn {
+        //     border: none;
+        //     border-bottom: 1px solid #00000056;
+        //     background-color: transparent;
+        //     text-align: left;
+        //     width: max-content;
+        //     min-width: 100px;
+        //     margin-bottom: 15px;
+        
+        //     span {
+        //       display: inline-block;
+        //       color: #000;
+        //       font-size: 23px;
+        //       font-weight: 600;
+        //       transition: all 0.5s ease-in-out;
+        //     }
+        
+        //     @media (hover: hover) {
+        //       &:hover span {
+        //         color: #DB9A64;
+        //       }
+        //     }
+        //   }
+    }
+  }
+  
+  .menuClassListContainer {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex: 0 0 80%;
+    flex-direction: column;
+  }
+  
+  .menuFoodSelector {
+    display: block;
+    flex: 0 0 15%;
+    max-width: 280px;
+    overflow: hidden;
+
+  }
+  
+  .menuFoodList {
+    display: flex;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    animation: fadeIn 0.5s ease-in-out;
+    position: relative;
+    min-height: 400px;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    
+
+    .tableMenuTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .menuProductCardContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        width: 100%;
+        padding: 0 10px;
+    }
+  }
+  
+  .menuTab {
+    margin-bottom: 50px;
+    animation: fadeIn 0.5s ease-in-out;
+  }  
+  
+  
+  
+ 
+  
+
+

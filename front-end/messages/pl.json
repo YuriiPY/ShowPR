@@ -1,0 +1,174 @@
+{
+    "NavigateButtons": {
+      "home": "Strona główna",
+      "menu": "Menu",
+      "contacts": "Kontakt"
+    },
+    "MainPage": {
+        "MainArea": {
+            "areaInfo1": {
+                "title": "Zapraszamy na najlepsze domowe jedzenie różnych narodowości",
+                "description": "Bistro. Catering. Wypieki. Pierogi, pielmieni, czebureki, naleśniki, sałatki, ciasta. Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Exercitation photo booth stumptown tote bag todo Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation photo booth i 8-bit kale chips proident chillwave deep vow laborum. Aliquip veniam delectus, marfa eiusmod Pinterest."
+            },
+            "areaInfo2": {
+                "title": "Zapraszamy na najlepsze domowe jedzenie różnych narodowości",
+                "description": "Bistro. Catering. Wypieki. Pierogi, pielmieni, czebureki, naleśniki, sałatki, ciasta. Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Exercitation photo booth stumptown tote bag todo Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation photo booth i 8-bit kale chips proident chillwave deep vow laborum. Aliquip veniam delectus, marfa eiusmod Pinterest."
+            },
+            "areaInfo3": {
+                "title": "Zapraszamy na najlepsze domowe jedzenie różnych narodowości",
+                "description": "Bistro. Catering. Wypieki. Pierogi, pielmieni, czebureki, naleśniki, sałatki, ciasta. Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Exercitation photo booth stumptown tote bag todo Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation photo booth i 8-bit kale chips proident chillwave deep vow laborum. Aliquip veniam delectus, marfa eiusmod Pinterest."
+            }
+        },
+        "CommentsArea": {
+            "title": "Opinii naszych klientów"
+        },
+        "Gallery Area": {
+            "title": "Galeria zdjęć"
+        },
+        "ButtonsName": {
+            "order": "Zamówienie",
+            "makeOrder": "Złóż zamówienie"
+        }
+    },
+    "Footer": {
+    "Column1": {
+      "title": "Dane firmowe",
+      "bankAccount": "Konto Bankowe"
+    },
+    "Column2": {
+      "title": "Godziny pracy",
+      "workDays": {
+        "mon": "Poniedziałek",
+        "tue": "Wtorek",
+        "wed": "Środa",
+        "thu": "Czwartek",
+        "fri": "Piątek",
+        "sat": "Sobota",
+        "sun": "Niedziela"
+      },
+      "closed": "Zamknięte"
+    },
+    "Column3": {
+      "title": "Na skróty",
+      "linksName": {
+        "home": "Strona główna",
+        "menu": "Menu",
+        "contacts": "Kontakt"
+      }
+    }
+  },
+  "ContactsPage": {
+		"title1": "Masz pytania?",
+		"title2": "Skontaktuj się z nami",
+		"title3": "Napisz lub zadzwoń do nas!",
+		"selectorLabel": "Wybierz restaurację",
+		"Information": {
+			"addressTitle": "Dane adresowe",
+			"openHours": "Godziny otwarcia",
+			"deliveryHours": "Godziny dostawy",
+			"workDays": {
+				"mon": "Poniedziałek",
+				"tue": "Wtorek",
+				"wed": "Środa",
+				"thu": "Czwartek",
+				"fri": "Piątek",
+				"sat": "Sobota",
+				"sun": "Niedziela"
+			},
+			"closed": "Zamknięte"
+		}
+	},
+    "MenuStaticText": {
+		"title": "Pyszne jedzenie",
+		"tabsButtonName": {
+			"cooked": "Gotowane",
+			"frozen": "Mrożone"
+		}
+	},
+    "TextForScreenReader": {
+  "socialLink": {
+    "navText": "Nasze linki społecznościowe",
+    "instagram": "Link do Instagrama, naciśnij enter, aby przejść do Instagrama",
+    "facebook": "Link do Facebooka, naciśnij enter, aby przejść do Facebooka"
+  },
+  "languageSelector": {
+    "mainButtonLabel": "Wybór języka",
+    "listVariantsLabel": "Wybór języka",
+    "dropDownLabel": "Lista dostępnych języków",
+    "language": "język",
+    "flagAlt": "Flaga"
+  },
+  "commentsArea": {
+    "prevButton": "naciśnij enter, aby przesunąć karuzelę do tyłu",
+    "nextButton": "naciśnij enter, aby przesunąć karuzelę do przodu"
+  },
+  "galleryText": {
+    "buttonText": "otwórz zdjęcie z galerii"
+  },
+  "menuText": {
+    "navigation": {
+      "chooseMenu": {
+        "cookedButton": "wybór gotowego jedzenia",
+        "frozenButton": "wybór mrożonego jedzenia"
+      }
+    },
+    "menuButton": "kliknij przycisk, aby rozwinąć",
+    "popUpTexts": {
+      "addProductButton": "zwiększ ilość produktu o 1",
+      "reduceProductButton": "zmniejsz ilość produktu o 1",
+      "productCount": "ilość produktu",
+      "productAmount": ""
+    }
+  },
+  "buttons": {
+    "closePopUpButton": "zamknij"
+  }
+},
+"paydesk": {
+  "firstForm": {
+    "title": "Dane osobowe",
+    "firstInputText": "Imię i nazwisko",
+    "secondInputText": "Email",
+    "thirdInputText": "Numer telefonu",
+    "submitButton": "Zapisz dane"
+  },
+  "secondForm": {
+    "title": "Weryfikacja numeru telefonu",
+    "textHint": "Wprowadź kod potwierdzający wysłany SMS-em",
+    "inputText": "Wprowadź kod weryfikacyjny",
+    "submitButton": "Zweryfikuj"
+  },
+  "thirdForm": {
+    "title": "Informacje o dostawie",
+    "Time": {
+      "title": "Czas",
+      "firstInputText": "Jak najszybciej",
+      "secondInputText": "Wybierz godzinę",
+      "textHint": "Wybierz godzinę dostawy:"
+    },
+    "Delivery": {
+      "title": "Dostawa",
+      "firstInputText": "Dostawa",
+      "secondInputText": "Dostawa bezkontaktowa (wymagana płatność online)",
+      "thirdInputText": "Odbiór osobisty"
+    },
+    "Location": {
+      "title": "Lokalizacja",
+      "firstInputText": "Ulica",
+      "secondInputText": "Dom",
+      "thirdInputText": "Numer domu",
+      "locateButton": "Zlokalizuj mnie",
+      "textHint": ""
+    },
+    "submitButton": "Sprawdź dane lokalizacji"
+  },
+  "Check": {
+  "title": "Sprawdź",
+  "additionalText": "Łączna kwota"
+}
+}
+
+
+
+}
+  

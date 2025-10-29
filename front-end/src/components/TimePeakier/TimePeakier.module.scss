@@ -1,0 +1,81 @@
+.timePeakier {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    .container {
+        width: 100%;
+        max-width: 150px;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        
+        .row {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .timePeakierBtn {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 10px;
+
+                button {
+                    background-color: #f3f3f3;
+                    box-shadow: 0 1px 2px #80574d1a;
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 10px;
+                    cursor: pointer;
+
+                    span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: .5s ease-in-out;
+                    }
+
+                   @media (min-width: 768px) {
+                        &:hover span {
+                            color: #b70000;
+                        }
+                   }
+                }
+
+            }
+
+            .timeContent {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #f3f3f3;
+                border-radius: 10px;
+                height: 56px;
+                margin: 8 auto;
+                font-weight: 700;
+
+                .formTimeControl {
+                    box-sizing: border-box;
+                    width: 70px;
+                    height: 48px;
+                    border: none;
+                    margin: 4px 0;
+                    background-color: transparent;
+                    color: #000;
+                    font-size: 22px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    text-align: center;
+                    letter-spacing: .3px;
+                    padding: 12px;
+                }
+
+            }
+        }
+    }
+
+}

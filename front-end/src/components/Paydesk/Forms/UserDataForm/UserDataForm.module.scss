@@ -1,0 +1,120 @@
+
+
+.regularForm {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    
+
+    .inputContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: relative;        
+
+        .regularInputForm {
+            width: 100%;
+            height: 45px;
+            border-radius: 10px;
+            border: solid 1px #9a9a9a;
+            padding: 10px;
+            transition: .3s;
+            padding: 15px;
+            // background: transparent;
+            outline: none;
+            color: #000000;
+            box-sizing: border-box;
+            line-height: 5;
+
+            &:not(:placeholder-shown) {
+                background-color: transparent;
+            }
+
+            &:focus {
+                border: 1px solid #DB9A64FF;
+                box-shadow: inset 0 0 0 1px #ddd;
+            }
+
+            &:focus ~ .regularLabelForm, &:not(:placeholder-shown) ~ .regularLabelForm {
+                top: -8px;
+                font-size: 12px;
+                color: rgba(219, 154, 100, 0.9);
+            }
+        }
+        .regularLabelForm {
+            position: absolute;
+            background-color: #FFFBF5;
+            left: 15px;
+            top: 10px;
+            scrollbar-color: #666 #b3b3b3;
+            scrollbar-width: thin;
+            transition: 0.3s;
+            pointer-events: none;
+            font-size: 15px;
+            font-weight: 400;
+
+            &.required {
+
+                &::after {
+                    padding-left: 3px;
+                    content: "*";
+                    color: #ba0700;
+                }
+            }
+        }
+
+        
+
+    }
+}
+
+.submitBtn {
+    width: 100%;
+
+    button {
+        height: 45px;
+        width: 100%;
+        background-color: #DB9A64FF;
+        border-radius: 15px;
+        font-size: 22px;
+        font-weight: 600;
+        color: #FFFBF5;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+
+        @media (max-width: 425px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 15px;
+        }
+
+        &:hover {
+            background-color: #ffe4b6;
+            color: #DB9A64FF;
+        } 
+    }
+}
+
+.titleArea {
+    
+    width: 100%;
+    margin-bottom: 15px;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: 35px;
+            font-weight: 500;
+            padding-bottom: 5px;
+        }
+    }
+}
+    

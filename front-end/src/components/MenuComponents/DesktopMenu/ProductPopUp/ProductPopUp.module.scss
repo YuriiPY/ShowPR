@@ -1,0 +1,332 @@
+
+.productCardPopUp {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    z-index: 1000;
+    border: none;
+    overflow: hidden;
+
+    
+    &:not([open]) {
+        display: none;
+    }
+
+    &::backdrop {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .popUpContainer {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        border: 10px;
+        max-height: 90vh;
+        border-radius: 10px;
+        background-color: #fffbf5;
+        padding: 10px 10px 0 10px;
+       
+        
+
+        .dialogCloseBtn {
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: #fffbf5;
+            width: 30px;
+            aspect-ratio: 1/1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                color: #697279;
+            }
+        }
+        // FIXME:
+
+        .scrollContainer {
+            max-height: calc(90vh - 50px);
+            overflow: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 100%;
+            
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            @media (max-width: 620px) {
+                overflow-x: hidden;
+                max-height: 100%;
+            }
+
+                .product {
+                    flex-direction: column;
+                    justify-content: start;
+                    gap: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+        
+                    .productImg {
+                        flex: 0 0 100% ;
+                        width: 100%;
+        
+                        .imgContainer {
+                            background-color: #000;
+                            width: 100%;
+                            
+                            img {
+                                width: 100%;
+                                object-fit: cover;
+                                transition: .3s ease-in-out;
+                            }
+                        }
+                    }
+        
+                    .productInfo {
+                        flex: 0 0 100%;
+                        height: fit-content;
+        
+                        .infoContainer {
+        
+                            h2 {
+                                font-size: 27px;
+                                font-weight: 600;
+                            }
+                            
+                            p {
+                                font-size: 18px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+        
+                    .additions {
+                        flex: 0 0 100%;
+                        min-height: 100px;
+                        width: 100%;
+        
+                        .additionsContainer {
+                            width: 100%;
+        
+                            .productCounter {
+                                width: max-content;
+                                display: flex;
+                                justify-content: start;
+                                gap: 10px;
+        
+                                .additionInformation {
+                                    
+                                    .popUpProductPrice {
+                                        user-select: none;
+                                        font-size: 20px;
+
+                                        &.byPortionPrice {
+
+                                            &::after {
+                                                font-size: 15px;
+                                                content: " zl";
+                                            }
+                                        }
+                                        &.byWeightPrice {
+
+                                            &::after {
+                                                font-size: 15px;
+                                                content: " zl/100gr";
+                                            }
+                                        }
+                                    }
+
+                
+                                }
+        
+                                .btnContainer {
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 15px;
+                                    justify-content: center;
+                                    align-items: center;
+        
+                                    button {
+                                        cursor: pointer;
+                                        background-color: transparent;
+                                        border: none;
+                                        transition: .3s ease-in-out;
+        
+                                        &:hover {
+                                            color: #697279;
+                                        }
+                                    }
+                                    span {
+                                        user-select: none;
+                                        font-size: 21px;
+                                        font-weight: 400;
+                                        min-width: 20px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+        
+                            .additionsToProductCounter {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: start;
+                                gap: 15px;
+        
+                                .additionsToProductContainer {
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 10px;
+        
+                                    .additionInformation {
+        
+                                        span {
+                                            user-select: none;
+                                            font-size: 21px;
+                                            font-weight: 400;
+
+                                            &::after {
+                                                content: "zl";
+                                            }
+                                        }        
+                                        
+                                    }
+            
+                                    .btnContainer {
+                                        display: flex;
+                                        flex-direction: row;
+                                        gap: 15px;
+                                        justify-content: center;
+                                        align-items: center;
+            
+                                        button {
+                                            cursor: pointer;
+                                            background-color:  transparent;
+                                            border: none;
+                                            transition: .3s ease-in-out;
+            
+                                            &:hover {
+                                                color: #697279;
+                                            }
+                                        }
+                                        span {
+                                            user-select: none;
+                                            font-size: 21px;
+                                            font-weight: 400;
+                                            min-width: 20px;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+        
+                            hr {
+                                width: 100%;
+                                margin: 10px 0;
+                                background-color: #000;
+                            }
+                        }
+                    }
+                }                
+        }
+        
+        
+        .footerPopUp {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: sticky;
+            bottom: 0;
+            // opacity: 0.5;
+            background-color: #fffbf5;
+            padding: 15px;
+            border-radius: 10px;
+            height: 70px;
+
+            .footerContainer {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .infoAmount {
+                    flex: 0 0 65%;
+                    display: flex;
+                    align-items: center;
+                    
+                    span {
+                        user-select: none;
+                        font-size: 22px;
+                        font-weight: 500;
+
+                        &::after {
+                            content: "zl";
+                        }
+                    }
+                }
+
+                .addBtnContainer {
+                    flex: 0 0 35%;
+
+                    .addToBasketBtn {
+                        min-height: 50px;
+                        min-width: 170px;
+                        background-color: #FFD8E4;
+                        border: none;
+                        cursor: pointer;
+                        border-radius: 20px;
+                        position: relative;
+                        z-index: 10;
+
+                        span {
+                            font-size: 17px;
+                            font-weight: 400; 
+                        }
+                    }
+
+                    .hintContainer {
+                        display: flex;
+                        align-items: start;
+                        justify-content: center;
+                        min-height: 50px;
+                        min-width: 170px;
+                        background-color: rgb(255, 216, 228);
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 20px;
+                        padding: 10px;
+                        opacity: .5;
+                        position: absolute;
+                        cursor: none;
+                        user-select: none;
+                        pointer-events: none;
+                        z-index: 5;
+                        // top: 15%;
+
+                        p {
+                            color: #960000;
+                            font-size: 15px;
+                            font-weight: 700;   
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+

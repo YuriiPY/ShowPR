@@ -1,0 +1,206 @@
+.mainContact {
+    padding-top: 80px;
+  
+    .subheader {
+      text-align: center;
+  
+      p {
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 33px;
+        margin-top: 15px;
+      }
+    }
+  
+    .heading {
+      font-weight: 500;
+  
+      .title {
+        display: block;
+        font-size: 35px;
+        line-height: 44px;
+      }
+  
+      .subTitle {
+        display: block;
+        font-size: 25px;
+        line-height: 33px;
+      }
+    }
+  
+    .chooseBase {
+      display: block;
+      margin-bottom: 32px;
+      text-align: center;
+  
+      .chooseGroup {
+        display: inline-block;
+        vertical-align: middle;
+      }
+  
+      .selectRestaurant {
+        display: inline-block;
+        max-width: 100%;
+        font-size: 20px;
+        font-weight: 400;
+      }
+  
+      .mSelect {
+        display: inline-block;
+        width: auto;
+        position: relative;
+        text-align: center;
+  
+        .selector {
+          display: inline-block;
+          width: auto;
+          vertical-align: middle;
+          color: #000;
+          border-color: #EAA49C;
+          background-color: transparent;
+          font-size: 20px;
+          font-weight: 400;
+          padding: 10px 20px 10px 5px;
+          cursor: pointer;
+          transition: 0.3s;
+          margin-left: 15px;
+
+          @media (max-width: 620px) {
+            margin-left: 0;
+            width: 90vw;
+            text-align: center;
+            font-size: 17px;
+          }
+  
+          &:hover {
+            background-color: rgba(120, 120, 120, 0.1);
+          }
+        }
+      }
+    }
+  
+    .allInfo {
+      display: flex;
+      gap: 10px;
+      padding: 30px 10%;
+      
+      @media (max-width: 620px) {
+        padding: 0 25px;
+        flex-direction: column-reverse;
+        gap: 25px;        
+      }
+  
+      .contactData {
+        flex: 0 0 40%;
+        text-align: center;
+
+        @media (max-width: 620px) {
+            flex: 1;       
+        }
+      }
+  
+      .contactItem {
+        display: inline-block;
+        margin: 25px 0 0 0;
+        min-height: 710px;
+        max-width: 500px;
+        text-align: left;
+        
+        @media (max-width: 620px) {
+            min-height: 500px;   
+            max-width: auto;   
+            margin: 0;
+        }
+  
+        .title {
+          font-size: 20px;
+          font-weight: 500;
+          color: #000;
+          margin: 0 0 0 21px;
+        }
+  
+        .icon {
+          margin: 5px 0 10px 20px;
+        }
+  
+        .listVertical {
+          display: block;
+          padding-left: 0;
+          list-style: none;
+          margin: 0;
+  
+          .listVerticalLi {
+            display: flex;
+            margin: 10px 0 0 20px;
+  
+            span {
+              display: block;
+              font: bold 20px "Josefin Sans", sans-serif;
+              font-weight: 500;
+              color: #000;
+              margin: 0 0 0 15px ;
+            }
+          }
+  
+          .listIcon img {
+            margin: 8px 5px 0 0;
+            vertical-align: center;
+          }
+        }
+      }
+  
+      .maps {
+        flex: 0 0 60%;
+        width: auto;
+        height: auto;
+        
+        @media (max-width: 620px) {
+            margin-right: 0;
+        }
+  
+        .contactMap {
+          position: relative;
+          min-height: 600px;
+
+          @media (max-width: 620px) {
+            width: 100%;
+            min-width: auto;
+          }
+  
+          #firstMap {
+            position: absolute;
+            z-index: 0;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+            width: 100%;
+            padding: 0px;
+            border-width: 0px;
+            margin: 0px;
+          }
+  
+          iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            border: none;
+          }
+        }
+      }
+    }
+  
+    .timeLimitsContainer {
+      display: block;
+      margin: 0 0 0 20px;
+  
+      th {
+        font: bold 20px "Josefin Sans", sans-serif;
+        font-weight: 300;
+      }
+  
+    }
+  }
+  

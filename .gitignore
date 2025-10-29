@@ -1,0 +1,5 @@
+tg_bot/venv/
+back-end/venv/
+.idea/
+.vscode/
+.env

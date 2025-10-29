@@ -1,0 +1,170 @@
+
+
+.submitSegmentBtn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        height: 45px;
+        width: 100%;
+        background-color: transparent;
+        font-size: 22px;
+        font-weight: 600;
+        color: #a6a6a6;
+        border: 1px solid #a6a6a6;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        
+
+        &.prevBtn {
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+
+        }
+        &.nextBtn {
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            position: relative;
+            color: rgba(219, 154, 100, 0.7);
+
+            // &::after {
+            //     content: '';
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     height: 100%;
+            //     width: 2px;
+            //     background-color: #000;
+            // }
+        }
+
+        @media (max-width: 425px) {
+            font-size: 20px;
+        }
+
+        @media (max-width: 375px) {
+            font-size: 15px;
+        }
+        @media (min-width: 768px) {
+            &:hover {
+                background-color: rgba(219, 154, 100, 0.037);
+                border: 1px solid rgb(219, 154, 100);
+                color: #DB9A64FF;
+            } 
+        }
+    }
+}
+
+.titleArea {
+    
+    width: 100%;
+    margin-bottom: 15px;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: 35px;
+            font-weight: 500;
+            padding-bottom: 5px;
+        }
+    }
+}
+            
+.payForm {
+
+ 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    .choosePayMethod {
+        height: 100%;
+        width: 100%;
+        border: none;
+        margin-bottom: 25px;
+
+        .selectedPayMethod {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            width: 100%;
+            min-height: 85px;
+            background-color: transparent;
+            cursor: pointer;
+            border-bottom: 1px solid #999999;
+
+            .payIcon {
+                flex: 0 0 15%;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+            }
+
+            .methodInfo {
+                flex: 0 0 70%;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+
+                .methodName {
+                    width: 100%;
+                    margin-bottom: 10px;
+
+                    span {
+                        font-size: 16px;
+                        color: #df647f;
+                        
+                    }
+                }
+                .quota {
+                    width: 100%;
+
+                    span {
+                        color: #000000a5;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .linkIcon {
+                flex: 0 0 15%;
+                display: flex;
+                align-items: center;
+                justify-content: right;
+            }
+        }
+    }
+}
+
+
+.notificationWindow {
+    width: 400px;
+    height: 200px;
+    background-color: #df647f9b;
+    border-radius: 20px;
+    border: 2px solid #e27189;
+    
+
+    .notificationContainer {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+        .notificationText {
+            color: #fff;
+            font-size: 25px;
+            font-weight: 700;
+        }   
+    }
+}

@@ -1,0 +1,15 @@
+aiofiles==24.1.0
+aiogram==3.20.0.post0
+aiogram_dialog==2.3.0
+aiohttp==3.11.11
+asyncpg==0.29.0
+envparse==0.2.0
+fastapi==0.115.12
+geopy==2.4.1
+httpx==0.28.1
+pydantic==2.11.3
+PyJWT==2.10.1
+Requests==2.32.3
+SQLAlchemy==2.0.36
+uvicorn==0.34.2
+

@@ -1,0 +1,18 @@
+{
+    "extends": [
+      "next/core-web-vitals",
+      "next/typescript"
+    ],
+    "plugins": [
+      "css-modules",
+      "stylelint"
+    ],
+    "rules": {
+        "css-modules/no-undef-class": "error",
+        "react/display-name": "error",
+        "css-modules/no-unused-class": "warn",
+        "@typescript-eslint/no-explicit-any": "warn",
+        "react-hooks/exhaustive-deps": "warn"
+    }
+  }
+  

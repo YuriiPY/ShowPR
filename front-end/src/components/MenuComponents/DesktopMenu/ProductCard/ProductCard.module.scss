@@ -1,0 +1,114 @@
+.productCard {
+    cursor: pointer;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s;
+    -webkit-box-shadow: 0px 1px 15px -9px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 1px 15px -9px rgba(0, 0, 0, 1);
+    box-shadow: 0px 1px 15px -9px rgba(0, 0, 0, 1);
+    position: relative;
+
+
+
+    &:hover {
+        -webkit-box-shadow: 0px 1px 15px -5px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 0px 1px 15px -5px rgba(0, 0, 0, 1);
+        box-shadow: 0px 1px 15px -5px rgba(0, 0, 0, 1);
+    }
+
+    .singleDelicious {
+        display: flex;
+        align-items: center !important;
+        height: 100%;
+      
+        .thumb {
+            aspect-ratio: 1 / 1;
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+
+            width: 160px;
+            height: 160px;
+            min-width: 160px;
+            min-height: 160px;
+    
+        img {
+
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+            transition: all 0.5s;
+            cursor: pointer;
+            border-style: none;
+            vertical-align: middle;
+    
+            &:hover {
+            transform: scale(1.1);
+            }
+        }
+        }
+      
+        .productInform {
+            padding-left: 10px;
+            flex: 0 0 60%;
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+      
+          .informationContainer {
+            text-align: left;
+            
+            h3 {
+                font-size: 19px;
+                font-weight: 500;
+                line-height: 22px;
+                letter-spacing: .3px;
+                color: #1c1210;
+                margin-bottom: 8px;
+              }
+          
+              p {
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: .3px;
+                color: #868686;
+                display: -webkit-box;
+                line-clamp: 2;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                padding-right: 8px;
+                min-height: 18px;
+              }
+        
+          }
+          .productPrice {
+            margin-top: auto;
+            color: #DB9A64;
+            font-size: 23px;
+            line-height: 24px;
+            font-weight: 500;
+
+            &.byPortionPrice {
+
+                &::after {
+                    font-size: 15px;
+                    content: " zl";
+                }
+            }
+            &.byWeightPrice {
+
+                &::after {
+                    font-size: 15px;
+                    content: " zl/100gr";
+                }
+            }
+          }
+        }
+    }
+}

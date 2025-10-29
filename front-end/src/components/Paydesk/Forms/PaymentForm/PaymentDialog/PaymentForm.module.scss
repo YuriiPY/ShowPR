@@ -1,0 +1,188 @@
+
+       
+.selectMethodPopUp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: #00000075;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    padding: revert;
+
+    &:not([open]) {
+        display: none;
+    }
+
+
+
+    .selectPopUpContainer {
+        max-width: 500px;
+        max-width: 500px;
+        width: 100%;
+        height: fit-content;
+        margin: 30px;
+        background-color: #FFFBF5;
+        border-radius: 10px;
+        overflow: hidden;
+
+        @media (max-width: 768px) {
+            margin: 16px;
+        }
+
+        aside {
+
+
+            .popUpHeader {
+                min-height: 85px;
+                display: flex;
+                align-items: start;
+                justify-content: end;
+
+                .closePopUpBtn {
+                    background-color: #3f3f3f;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    width: 40px;
+                    height: 40px;
+                    margin: 7px;
+                    transition: .2s ease-in;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @media (min-width: 768px) {
+                        &:hover {
+                            background-color: #505050;
+                        }
+                    }
+
+                    .closeBtnIcon {
+                        color: #fff;
+                        width: 70%;
+                        height: 70%;
+                    }
+                }
+
+            }
+
+            .Content {
+                padding: 0 20px 20px 20px;
+
+                .paymentMethodContent {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: stretch;
+                    justify-content: start;
+                                    
+                    .title {
+                        margin-bottom: 30px;
+
+                        h2 {
+                            font-size: 23px;
+                            font-weight: 700;
+                                @media (max-width: 375px) {
+                                    font-size: 20px;
+                                }
+                        }
+                    }
+
+                    .paymentMethodGroup {
+
+                        .addCardInfo {
+                            display: block;
+
+                            h3 {
+                                font-size: 20px;
+                                font-weight: 600;
+                                @media (max-width: 375px) {
+                                    font-size: 17px;
+                                }
+                            }
+
+                            .addCardButton {
+                                width: 100%;
+                                min-height: 50px;
+                                cursor: pointer;
+                                display: flex;
+                                align-items: center;
+                                justify-content: start;
+                                font-size: 16px;
+                                background-color: transparent;
+                                @media (max-width: 375px) {
+                                    font-size: 14px;
+                                }
+
+                                span {
+                                    margin-right: 10px;
+                                }
+
+                            }
+                        }
+
+                        .paymentMethodList {
+                            h3 {
+                                font-size: 20px;
+                                font-weight: 600;
+                                @media (max-width: 375px) {
+                                    font-size: 17px;
+                                }
+                            }
+
+                            .paymentMethodItem {
+                                width: 100%;
+                                padding: 10px;
+                                background-color: transparent;
+                                display: flex;
+                                align-items: center;
+                                justify-content: start;
+                                gap: 10px;
+                                font-size: 16px;
+                                border-bottom: 1px solid #999999;
+
+                                @media (max-width: 375px) {
+                                    font-size: 14px;
+                                }
+
+                                .methodName {
+                                    flex: 1;
+                                    text-align: left;
+                                }
+
+                                .buttonImitation {
+                                    width: 80px;
+                                    height: 40px;
+                                    background-color: #df647f43;
+                                    border-radius: 10px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    cursor: pointer;
+                                    transition: .3s ease-in-out;
+
+                                    span {
+                                        color: #df647f;
+                                        font-weight: 600;
+                                    }
+
+                                    @media (min-width: 768px) {
+                                        &:hover {
+                                        background-color: #df647f58;
+                                    }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                } 
+
+            }
+        }
+    }
+}
+    

@@ -1,0 +1,171 @@
+{
+    "NavigateButtons": {
+        "home": "Home",
+        "menu": "Menu",
+        "contacts": "Contacts" 
+    },
+    "MainPage": {
+        "MainArea": {
+            "areaInfo1": {
+                "title": "We invite you to the best homemade food of different nationalities",
+                "description": "Bistro. Catering. Pastries. Dumplings, pelmeni, chebureki, pancakes, salads, cakes. Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Exercitation photo booth stumptown tote bag todo Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation photo booth and 8-bit kale chips proident chillwave deep vow laborum. Aliquip veniam delectus, marfa eiusmod Pinterest."
+            },
+            "areaInfo2": {
+                "title": "We invite you to the best homemade food of different nationalities",
+                "description": "Bistro. Catering. Pastries. Dumplings, pelmeni, chebureki, pancakes, salads, cakes. Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Exercitation photo booth stumptown tote bag todo Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation photo booth and 8-bit kale chips proident chillwave deep vow laborum. Aliquip veniam delectus, marfa eiusmod Pinterest."
+            },
+            "areaInfo3": {
+                "title": "We invite you to the best homemade food of different nationalities",
+                "description": "Bistro. Catering. Pastries. Dumplings, pelmeni, chebureki, pancakes, salads, cakes. Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Exercitation photo booth stumptown tote bag todo Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation photo booth and 8-bit kale chips proident chillwave deep vow laborum. Aliquip veniam delectus, marfa eiusmod Pinterest."
+            }
+        },
+        "CommentsArea": {
+            "title": "Our customers' reviews"
+        },
+        "Gallery Area": {
+            "title": "Photo Gallery"
+        },
+        "ButtonsName": {
+            "order": "Order",
+            "makeOrder": "Make Order"
+        }
+    },
+    "Footer": {
+        "Column1": {
+        "title": "Company Information",
+        "bankAccount": "Bank Account"
+        },
+        "Column2": {
+        "title": "Working Hours",
+        "workDays": {
+            "mon": "Monday",
+            "tue": "Tuesday",
+            "wed": "Wednesday",
+            "thu": "Thursday",
+            "fri": "Friday",
+            "sat": "Saturday",
+            "sun": "Sunday"
+        },
+        "closed": "Closed"
+        },
+        "Column3": {
+        "title": "Quick Links",
+        "linksName": {
+            "home": "Home",
+            "menu": "Menu",
+            "contacts": "Contacts"
+        }
+        }
+  },
+  "ContactsPage": {
+    "title1": "Do you have any questions?",
+    "title2": "contact us",
+    "title3": "Write or call to us!",
+    "selectorLabel": "Choose a restaurant",
+    "Information": {
+        "addressTitle": "Address data",
+        "openHours": "Opening hours",
+        "deliveryHours": "Delivery hours",
+        "workDays": {
+            "mon": "Monday",
+            "tue": "Tuesday",
+            "wed": "Wednesday",
+            "thu": "Thursday",
+            "fri": "Friday",
+            "sat": "Saturday",
+            "sun": "Sunday"
+        },
+        "closed": "Closed"
+    }
+  },
+  "MenuStaticText": {
+    "title": "Delicious Food",
+    "tabsButtonName": {
+        "cooked": "Cooked",
+        "frozen": "Frozen"
+    } 
+  },
+
+  "TextForScreenReader": {
+    "socialLink": {
+        "navText": "Our social links",
+        "instagram": "Instagram social link, press enter to go to our instagram",
+        "facebook": "FaceBook social link, press enter to gp to our facebook"
+    },
+    "languageSelector": {
+        "mainButtonLabel": "Language selection", 
+        "listVariantsLabel": "Language selection",
+        "dropDownLabel": "List of available languages",
+        "language": "language",
+        "flagAlt": "Flag"
+    },
+    "commentsArea": {
+        "prevButton": "press enter to scroll the carousel back",
+        "nextButton": "press enter to scroll the carousel forward"
+    },
+    "galleryText": {
+        "buttonText": "open photo from gallery"
+    },
+    "menuText": {
+        "navigation": {
+            "chooseMenu": {
+                "cookedButton": "cooked food selection",
+                "frozenButton": "frozen food selection"
+            }
+        },
+        "menuButton": "button click to expand", 
+        "popUpTexts": {
+            "addProductButton": "increase the quantity of the product by 1",
+            "reduceProductButton": "reduce the amount of product by 1",
+            "productCount": "count of product",
+            "productAmount": ""
+        }
+    },
+    "buttons": {
+        "closePopUpButton": "close"
+    }   
+  },
+  "paydesk": {
+    "firstForm": {
+        "title":"Personal information",
+        "firstInputText": "Full name",
+        "secondInputText": "Email",
+        "thirdInputText": "Phone number",
+        "submitButton": "Save information"
+    },
+    "secondForm": {
+        "title":"Phone number verification",
+        "textHint": "Enter the confirmation code sent to you by SMS",
+        "inputText": "Enter verify code",
+        "submitButton": "Verify"
+    },
+    "thirdForm": {
+        "title":"Delivery information",
+        "Time": {
+            "title": "Time",
+            "firstInputText": "As soon as possible",
+            "secondInputText": "Select time",
+            "textHint": "Select delivery time:"
+        },
+        "Delivery": {
+            "title": "Delivery",
+            "firstInputText": "Delivery",
+            "secondInputText": "Contact less delivery (online payment required)",
+            "thirdInputText": "Own collection"
+        },
+        "Location": {
+            "title": "Location",
+            "firstInputText": "Street",
+            "secondInputText": "Home",
+            "thirdInputText": "Home number",
+            "locateButton": "Locate me",
+            "textHint": ""
+        },
+        "submitButton": "Add data"
+    },
+    "Check": {
+        "title": "Check",
+        "additionalText": "Total amount"
+    }
+  }
+}

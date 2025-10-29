@@ -1,0 +1,101 @@
+$color-0: #3C1D23;  // Темно-рожевий
+$color-10: #8F4B59; // Темний
+$color-20: #BF6A7E; // Пастельний
+$color-30: #E296A7; // Світлий
+$color-50: #fffbf5; // Оригінальний
+$color-70: #FFE6F0; // Світло-рожевий
+$color-90: #FFF7FB; // Дуже світлий
+$color-99: #FFFFFF; // Білий
+$color-100: #FFFFFF; // Білий
+
+.aboutArea {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: $color-50;
+	width: 100%;
+    min-height: 1500px;
+    height: fit-content;
+	
+	.container {
+        flex: 0 0 1;
+        flex-grow: 1;
+		width: 100%;
+        height: 100%;
+		// overflow: hidden;
+
+        .stable {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: end;
+            overflow: hidden;
+        }
+	}
+
+  .icon1 {
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    opacity: 0.5;
+  }
+
+  .icon2 {
+    position: absolute;
+    right: 1%;
+    bottom: 18%;
+    opacity: 0.5;
+  }
+
+  .icon3 {
+    position: absolute;
+    bottom: 10%;
+    left: 9%;
+    opacity: 0.5;
+  }
+
+  .foodList {
+    display: flex;
+    margin-top: 50px;
+    padding: 25px;
+
+    @media (max-width: 420px) {
+        margin-top: 25px;
+        padding: 10px;
+    }
+
+    li {
+      display: flex;
+      text-align: match-parent;
+      margin-right: 50px;
+      align-items: center;
+
+      img {
+        vertical-align: middle;
+        border-style: none;
+        width: 60px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+
+        @media (max-width: 420px) {
+            width: 45px;
+        }
+      }
+
+      span {
+        padding-left: 10px;
+        color: $color-30;
+        font-size: 20px;
+        font-weight: 400;
+
+
+        @media (max-width: 420px) {
+            font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,35 @@
+.loadingContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    // border: 1px solid #000;
+
+    .chopstickContainer {
+        width: 70%;
+        height: 70%;
+        position: absolute;
+        
+        svg {
+            // border: 1px solid #000;
+        }
+
+        &.firstIcon {
+            right: 10%;
+        }
+
+        &.secondIcon {
+            right: 0;
+            top: 10%;
+
+        }
+    }
+
+    .dumplingContainer {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        top: 70%;
+        left: 35%;
+        // transform: translate(-50%, -50%);
+    }
+}

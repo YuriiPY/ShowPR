@@ -1,0 +1,106 @@
+
+//SINGLE CAROUSEL 
+
+.singleCarousel {
+	flex: 0 0 50%;
+	display: inline-block;
+	min-height: 1px;
+	max-width: 540px;
+	margin: 0 15px;
+	white-space: normal;
+	word-wrap: break-word;
+
+	.authorOpinion {
+		display: flex;
+		align-items: center;
+		background: #fff;
+		height: max-content;
+		padding: 10px 5px 10px 10px;
+		border: 5px solid #000;
+		border-radius: 10px;
+		position: relative;
+		margin-bottom: 20px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			background: #fff;
+			left: 20px;
+			width: 20px;
+			height: 20px;
+			transform: rotate(45deg);
+			bottom: -10px;
+			border-bottom: 2px solid #000;
+			border-right: 2px solid #000;
+		}
+
+		p {
+			white-space: normal;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 32px;
+			color: #596672;
+			padding: 0 10px;
+			text-align: left;
+            @media (max-width: 620px) {
+                font-size: 15px;
+              }
+		}
+	}
+
+	.testimonialAuthor {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+
+		.authorName {
+			margin: auto 0;
+			padding-left: 15px;
+
+            .icon {
+                display: block;
+            }
+
+			h1 {
+				color: #FFF;
+				font: bold 20px 'Josefin Sans', sans-serif;
+				padding-bottom: 8px;
+			}
+		}
+
+		.authorPhoto {
+			box-sizing: border-box;
+		}
+	}
+	.star {
+    display: inline-block;
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+    background: gold;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      bottom: 1px;
+      right: 1px;
+      background: gold;
+      z-index: 1;
+    }
+
+    &,
+    &:before {
+      -webkit-clip-path: polygon(
+        50% 0%, 66% 27%, 98% 35%, 76% 57%, 79% 91%, 
+        50% 78%, 21% 91%, 24% 57%, 2% 35%, 32% 27%
+      );
+      clip-path: polygon(
+        50% 0%, 66% 27%, 98% 35%, 76% 57%, 79% 91%, 
+        50% 78%, 21% 91%, 24% 57%, 2% 35%, 32% 27%
+      );
+    }
+  }
+}

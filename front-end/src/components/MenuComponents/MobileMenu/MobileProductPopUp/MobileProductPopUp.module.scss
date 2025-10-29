@@ -1,0 +1,255 @@
+
+.popUpContainer {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+
+
+    .scrollContainer {
+        height: 100%;
+        padding: 25px;
+
+            .product {
+                flex-direction: column;
+                justify-content: start;
+                gap: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+    
+                .productImg {
+                    flex: 0 0 100% ;
+                    width: 100%;
+    
+                    .imgContainer {
+                        background-color: #000;
+                        width: 100%;
+                        overflow: hidden;
+                        border-radius: 20px;
+                        
+                        img {
+                            width: 100%;
+                            object-fit: cover;
+                            transition: .3s ease-in-out;
+                        }
+                    }
+                }
+    
+                .productInfo {
+                    flex: 0 0 100%;
+                    height: fit-content;
+    
+                    .infoContainer {
+    
+                        h2 {
+                            font-size: 27px;
+                            font-weight: 600;
+                        }
+                        
+                        p {
+                            font-size: 18px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+    
+                .additions {
+                    flex: 0 0 100%;
+                    min-height: 100px;
+                    width: 100%;
+    
+                    .additionsContainer {
+                        width: 100%;
+    
+                        .productCounter {
+                            width: max-content;
+                            display: flex;
+                            justify-content: start;
+                            gap: 10px;
+    
+                            .additionInformation {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+    
+                                span {
+                                    font-size: 19px;
+                                }
+                                
+                                .byPortionPrice {
+                                    
+
+                                    &::before {
+                                        content: ":";
+                                    }
+
+                                    &::after {
+                                        font-size: 15px;
+                                        content: " zl";
+                                    }
+                                }
+                                .byWeightPrice {
+                                    &::before {
+                                        content: ": ";
+                                    }
+    
+                                    &::after {
+                                        font-size: 15px;
+                                        content: " zl/100gr";
+                                    }
+                                }
+                            }
+    
+                            .btnContainer {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 15px;
+                                justify-content: center;
+                                align-items: center;
+    
+                                button {
+                                    cursor: pointer;
+                                    background-color: transparent;
+                                    border: none;
+                                    transition: .3s ease-in-out;
+    
+                                    &:hover {
+                                        color: #697279;
+                                    }
+                                }
+                                span {
+                                    font-size: 21px;
+                                    font-weight: 400;
+                                    min-width: 20px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+    
+                        .additionsToProductCounter {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            gap: 15px;
+    
+                            .additionsToProductContainer {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 10px;
+    
+                                .additionInformation {
+    
+                                    span {
+                                        font-size: 21px;
+                                        font-weight: 400;
+        
+                                        // &::before {
+                                        //     content: ": ";
+                                        // }
+        
+                                        &::after {
+                                            content: "zl";
+                                        }
+                                    }
+                                }
+        
+                                .btnContainer {
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 15px;
+                                    justify-content: center;
+                                    align-items: center;
+        
+                                    button {
+                                        cursor: pointer;
+                                        background-color:  transparent;
+                                        border: none;
+                                        transition: .3s ease-in-out;
+        
+                                        &:hover {
+                                            color: #697279;
+                                        }
+                                    }
+                                    span {
+                                        font-size: 21px;
+                                        font-weight: 400;
+                                        min-width: 20px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        }
+    
+                        hr {
+                            width: 100%;
+                            margin: 10px 0;
+                            background-color: #000;
+                        }
+                    }
+                }
+            }                
+    }
+}
+
+.footerPopUp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // opacity: 0.5;
+    border-radius: 10px;
+    padding: 0 20px;
+    height: 70px;
+    width: 100%;
+
+    .footerContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .infoAmount {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            
+            span {
+                font-size: 18px;
+                font-weight: 500;
+
+                &::after {
+                    content: "zl";
+                }
+            }
+        }
+
+        .addBtnContainer {
+            flex: 0 0 35%;
+
+            .addToBasketBtn {
+                min-height: 50px;
+                min-width: 170px;
+                background-color: #8F4B59;
+                border: none;
+                cursor: pointer;
+                border-radius: 20px;
+                color: #FFF7FB ;
+
+                &:disabled {
+                    cursor: not-allowed;
+                    filter: grayscale(70%);
+                    opacity: 0.6;
+                    pointer-events: none;
+                }
+
+                span {
+                    font-size: 17px;
+                    font-weight: 400; 
+                }
+            }
+        }
+    }
+
+}
+

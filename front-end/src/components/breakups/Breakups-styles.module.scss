@@ -1,0 +1,27 @@
+.spaceSectionUp,
+.spaceSectionDown {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70px;
+	width: 100%;
+  position: absolute;
+  z-index: 10;
+
+  &.spaceSectionUp {
+    background-image: url('/breakups/cut-photo-up.png');
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  &.spaceSectionDown {
+    background-image: url('/breakups/cut-photo-down.png');
+    top: -3px;
+    right: 0;
+    left: 0;
+  }
+	div {
+		width: 100%;
+	}
+}

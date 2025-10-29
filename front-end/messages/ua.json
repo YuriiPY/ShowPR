@@ -1,0 +1,175 @@
+{
+    "NavigateButtons": {
+      "home": "Головна",
+      "menu": "Меню",
+      "contacts": "Контакти"
+    },
+    "MainPage": {
+        "MainArea": {
+            "areaInfo1": {
+                "title": "Запрошуємо на найкращу домашню їжу різних національностей",
+                "description": "Бістро. Кейтеринг. Випічка. Вареники, пельмені, чебуреки, млинці, салати, торти. Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Exercitation photo booth stumptown tote bag todo Banksy, elit small batch freegan sed. Крафтове пиво, сейтон, photo booth та 8-бітні чіпси з кейлом — proident chillwave deep vow laborum. Aliquip veniam delectus, marfa eiusmod Pinterest."
+            },
+            "areaInfo2": {
+                "title": "Запрошуємо на найкращу домашню їжу різних національностей",
+                "description": "Бістро. Кейтеринг. Випічка. Вареники, пельмені, чебуреки, млинці, салати, торти. Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Exercitation photo booth stumptown tote bag todo Banksy, elit small batch freegan sed. Крафтове пиво, сейтон, photo booth та 8-бітні чіпси з кейлом — proident chillwave deep vow laborum. Aliquip veniam delectus, marfa eiusmod Pinterest."
+            },
+            "areaInfo3": {
+                "title": "Запрошуємо на найкращу домашню їжу різних національностей",
+                "description": "Бістро. Кейтеринг. Випічка. Вареники, пельмені, чебуреки, млинці, салати, торти. Omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi. Exercitation photo booth stumptown tote bag todo Banksy, elit small batch freegan sed. Крафтове пиво, сейтон, photo booth та 8-бітні чіпси з кейлом — proident chillwave deep vow laborum. Aliquip veniam delectus, marfa eiusmod Pinterest."
+            }
+        },
+        "CommentsArea": {
+            "title": "Відгуки наших клієнтів"
+        },
+        "Gallery Area": {
+            "title": "Фотогалерея"
+        },
+        "ButtonsName": {
+            "order": "Замовити",
+            "makeOrder": "Оформити замовлення"
+        }
+    },
+    "Footer": {
+        "Column1": {
+          "title": "Дані компанії",
+          "bankAccount": "Банківський рахунок"
+        },
+        "Column2": {
+          "title": "Години роботи",
+          "workDays": {
+            "mon": "Понеділок",
+            "tue": "Вівторок",
+            "wed": "Середа",
+            "thu": "Четвер",
+            "fri": "П’ятниця",
+            "sat": "Субота",
+            "sun": "Неділя"
+          },
+        "closed": "Зачинено"
+        },
+        "Column3": {
+          "title": "Швидкі посилання",
+          "linksName": {
+            "home": "Головна",
+            "menu": "Меню",
+            "contacts": "Контакти"
+          }
+        }
+    },
+    "ContactsPage": {
+		"title1": "У вас є питання?",
+		"title2": "Зв'яжіться з нами",
+		"title3": "Напишіть або зателефонуйте нам!",
+		"selectorLabel": "Виберіть ресторан",
+		"Information": {
+			"addressTitle": "Дані адреси",
+			"openHours": "Години роботи",
+			"deliveryHours": "Час доставки",
+			"workDays": {
+				"mon": "Понеділок",
+				"tue": "Вівторок",
+				"wed": "Середа",
+				"thu": "Четвер",
+				"fri": "П’ятниця",
+				"sat": "Субота",
+				"sun": "Неділя"
+			},
+			"closed": "Закрито"
+		}
+	},
+    "MenuStaticText": {
+		"title": "Menu",
+		"tabsButtonName": {
+			"cooked": "Приготовлене",
+			"frozen": "Заморожене"
+		}
+	},
+    "TextForScreenReader": {
+  "socialLink": {
+    "navText": "Наші соціальні посилання",
+    "instagram": "Соціальне посилання на Instagram, натисніть Enter, щоб перейти в Instagram",
+    "facebook": "Соціальне посилання на Facebook, натисніть Enter, щоб перейти у Facebook"
+  },
+  "languageSelector": {
+    "mainButtonLabel": "Вибір мови",
+    "listVariantsLabel": "Вибір мови",
+    "dropDownLabel": "Список доступних мов",
+    "language": "мова",
+    "flagAlt": "Прапор"
+  },
+  "commentsArea": {
+    "prevButton": "натисніть Enter, щоб прокрутити карусель назад",
+    "nextButton": "натисніть Enter, щоб прокрутити карусель вперед"
+  },
+  "galleryText": {
+    "buttonText": "відкрити фото з галереї"
+  },
+  "menuText": {
+    "navigation": {
+      "chooseMenu": {
+        "cookedButton": "вибір приготованої їжі",
+        "frozenButton": "вибір замороженої їжі"
+      }
+    },
+    "menuButton": "натисніть кнопку, щоб розгорнути",
+    "popUpTexts": {
+      "addProductButton": "збільшити кількість продукту на 1",
+      "reduceProductButton": "зменшити кількість продукту на 1",
+      "productCount": "кількість продукту",
+      "productAmount": ""
+    }
+  },
+  "buttons": {
+    "closePopUpButton": "закрити"
+  }
+},
+"paydesk": {
+  "firstForm": {
+    "title": "Особиста інформація",
+    "firstInputText": "Повне ім’я",
+    "secondInputText": "Електронна пошта",
+    "thirdInputText": "Номер телефону",
+    "submitButton": "Зберегти інформацію"
+  },
+  "secondForm": {
+    "title": "Підтвердження номера телефону",
+    "textHint": "Введіть код підтвердження, надісланий вам SMS-повідомленням",
+    "inputText": "Введіть код підтвердження",
+    "submitButton": "Підтвердити"
+  },
+  "thirdForm": {
+    "title": "Інформація про доставку",
+    "Time": {
+      "title": "Час",
+      "firstInputText": "Якомога швидше",
+      "secondInputText": "Виберіть час",
+      "textHint": "Виберіть час доставки:"
+    },
+    "Delivery": {
+      "title": "Доставка",
+      "firstInputText": "Доставка",
+      "secondInputText": "Безконтактна доставка (потрібна онлайн-оплата)",
+      "thirdInputText": "Самовивіз"
+    },
+    "Location": {
+      "title": "Локація",
+      "firstInputText": "Вулиця",
+      "secondInputText": "Будинок",
+      "thirdInputText": "Номер будинку",
+      "locateButton": "Знайти мене",
+      "textHint": ""
+    },
+    "submitButton": "Перевірити дані локації"
+  },
+"Check": {
+  "title": "Перевірити",
+  "additionalText": "Загальна сума"
+}
+}
+
+
+
+
+}
+  

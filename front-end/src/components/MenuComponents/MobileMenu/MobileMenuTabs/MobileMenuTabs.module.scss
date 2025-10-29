@@ -1,0 +1,49 @@
+.selectorGroupContainer {
+    display: grid;
+    justify-content: start;
+    grid-auto-flow: column;  
+    gap: 10px;
+    overflow-x: auto;
+    transition: .3s ease-in-out;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &.selectorGroupFixed {
+        background-color:#FFFBF5;
+        width: 100%;
+        padding: 10px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+    }
+
+    .selectorBtnContainer {
+        text-align: center;
+        width: max-content;
+
+        .submenuBtn {
+            border: solid 1px #b4b4b4;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: transparent;
+            cursor: pointer;
+            user-select: none;
+
+            .submenuBtnText {
+                display: inline-block;
+                color: #000;
+                font-size: 23px;
+                font-weight: 600;
+                transition: all 0.5s ease-in-out;
+                user-select: none;
+
+                &.selected{
+                    color: #DB9A64 !important;
+                }
+            }
+        }
+    }
+}

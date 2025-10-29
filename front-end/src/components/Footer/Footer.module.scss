@@ -1,0 +1,186 @@
+  $primary-color: #fff;
+  $accent-color: #DB9A64;
+
+  $color-0: #3C1D23;  // Темно-рожевий
+  $color-10: #8F4B59; // Темний
+  $color-20: #BF6A7E; // Пастельний
+  $color-30: #E296A7; // Світлий
+  $color-50: #FFD8E4; // Оригінальний
+  $color-70: #FFE6F0; // Світло-рожевий
+  $color-90: #FFF7FB; // Дуже світлий
+  $color-99: #FFFFFF; // Білий
+  $color-100: #FFFFFF; // Білий
+  
+  .primaryFooter {
+    position: relative;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 620px) {
+        align-items: flex-end;
+        height: 120vh;
+      }
+
+    
+
+
+    .backgroundOverlay {
+      background-color: transparent;
+      background-image: linear-gradient(180deg, #000000c2 30%, #00000091 50%);
+      opacity: 0.7;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      z-index: 0;
+      pointer-events: none;
+    }
+  
+    .backgroundFooterOverlayImg {
+      position: absolute;
+      background-image: url('/Footer/background/footer-photo.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: all 1s ease-in-out;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      pointer-events: none;
+    }
+  
+    .elementSection {
+      position: relative;
+      z-index: 3;
+  
+      .element {
+        position: relative;
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+  
+        .elementContainer {
+          display: flex;
+          justify-content: center;
+
+          @media (max-width: 620px) {
+            flex-direction: column-reverse;
+            align-items: center;
+          }
+        }
+
+        .middleElement {
+          border-left: 2px solid $color-90 ;
+          border-right: 2px solid $color-90 ;
+
+          @media (max-width: 620px) {
+            border-left: none ;
+            border-right: none ;
+            border-bottom: 2px solid $color-90;
+            border-top: 2px solid $color-90;
+
+
+          }
+        }
+        .col33 {
+          padding: 30px;
+          position: relative;
+          display: block;
+          width: 33%;
+
+          @media (max-width: 620px) {
+            width: 100%;
+          }
+  
+          .elementElement {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+            .elementList {
+                display: block;
+            }
+  
+            h1 {
+              color: $primary-color;
+              font-size: 21px;
+              font-weight: 400;
+            }
+  
+            span {
+              color: $primary-color;
+              font-size: 20px;
+              font-weight: 400;
+
+              @media (max-width: 720px) {
+                   font-size: 15px;
+                }
+            }
+  
+            th {
+              color: $primary-color;
+              font-size: 20px;
+              font-weight: 400;
+
+              @media (max-width: 720px) {
+                   font-size: 15px;
+                }
+            }
+  
+            .elementItem {
+              margin: 5px 0;
+            }
+  
+            .elementItem a span {
+              transition: color 0.5s ease;
+            }
+  
+            .elementItem a:hover span {
+              color: $accent-color;
+            }
+  
+            .elementItemNav {
+                display: block;
+            }
+  
+            .elementPhoto {
+              margin: 8px 0 15px 0;
+            }
+  
+            #midlElement {
+              border-left: 2px solid #FFFBF5;
+              border-right: 2px solid #FFFBF5;
+            }
+  
+            .leftColumn {
+              text-align: left;
+            }
+  
+            .rightColumn {
+              text-align: right;
+              white-space: nowrap;
+            }
+  
+            .spacer {
+              width: 20px;
+              height: 25px;
+            }
+          }
+        }
+      }
+    }
+  
+    
+  }
+  

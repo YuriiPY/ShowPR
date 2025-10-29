@@ -1,0 +1,62 @@
+.openingHours {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+        .openingHoursContainer { 
+            width: 100%;
+            .hoursTitle {
+                display: flex;
+                align-items: center;
+                h2 {
+                    display: inline-block;
+                    font-size: 20px;
+                    font-weight: 500;
+                    white-space: nowrap;
+                    margin-right: 5px;
+                  }
+                  .limitsBtn {
+                      border: 0;
+                      background: transparent;
+                      cursor: pointer;
+                  
+                      svg {
+                        transition: 0.5s;
+                  
+                        &:hover {
+                          color: #3C1D23;
+                          transform: scale(0.9);
+                        }
+                      }
+                    }
+            }
+        }
+    
+      .workingHours {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .3s ease-in-out;
+
+        &.visible {
+            max-height: 500px;
+        }
+
+        .workingHoursItem {
+            display: block;
+
+            .limitsTable {
+                .leftColumn {
+                    text-align: left;
+                  }
+                
+                  .rightColumn {
+                    text-align: right;
+                  }
+                
+                  .spacer {
+                    width: 20px;
+                    height: 25px;
+                  }
+            }
+        }
+      }
+  }
